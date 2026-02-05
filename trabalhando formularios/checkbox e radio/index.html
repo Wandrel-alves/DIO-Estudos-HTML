@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="post">
+        <h3>Você selecionou: pizza de calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+            <input type="checkbox" disabled name="opcionais[]" value="mussarela"><label for="mussarela">Mussarela</label><br>
+            <input type="checkbox" name="opcionais[]" value="pepperoni"><label for="pepperoni">Pepperoni</label><br>
+            <input type="checkbox" name="opcionais[]" value="tomate"><label for="tomate">Tomate</label><br>
+
+            <!-- o [] ajuda ao php ou oq for de back end entender que isso é uma lista e consegue reconhecer como uma lista
+             tbm exite o disable que desabilita o checkbox ou radio ele fica inativo
+            -->
+
+
+        <p>Borda recheada?</p>
+            <input type="radio" name="borda" value="sim">Sim <br>
+            <input type="radio" name="borda" value="nao">Não <br>
+        <p>Bebida</p>
+            <input type="radio" name="bebida" value="refrigerante">Refrigerante <br>
+            <input type="radio" name="bebida" value="suco">Suco <br>
+            <input type="radio" name="bebida" value="agua">Água <br>
+        <button type="submit">Enviar Pedido</button>
+    </form>
+</body>
+</html>
