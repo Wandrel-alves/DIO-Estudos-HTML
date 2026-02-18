@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            margin-bottom: 5px;
+        }
+        label {
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            paddinng-right: 5px;
+        }
+        fieldset {
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de cadastro</h1>
+
+<fieldset>
+    <legend>Dados Pessoais</legend>
+    <div class="row">
+        <label for="nome">Nome:</label> <input type="text" id="nome">
+        <label for="E-mail">E-mail:</label> <input type="email" id="E-mail">
+    </div>
+
+    <div class="row">
+        <label for="profissão">profissão:</label> <input type="tel" id="profissão">
+        <label for="empresa">Empresa:</label> <input type="number" id="empresa">
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>Endereço</legend>
+    <div class="row">
+        <label for="Numero">Numero:</label> <input type="tel" id="Numero" width="10">
+        <label for="endereço">Endereço:</label> <input type="text" id="endereço">
+    </div>
+
+    <div class="row">
+        <label for="Bairro">Bairro:</label> <input type="text" id="Bairro">
+        <label for="Cidade">Cidade:</label> <input type="text" id="Cidade">
+    </div>
+
+    <div class="row">
+        <label for="Estado">Estado:</label> <input type="text" id="Estado">
+        <label for="CEP">CEP:</label> <input type="text" id="CEP">
+    </div>
+</fieldset>
+
+    <div class="row">
+        <button type="reset">
+            Limpar
+        </button>
+        <button type="submit">
+            enviar formulario
+        </button>
+    </div>
+</body>
+</html>
